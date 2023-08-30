@@ -1,6 +1,6 @@
 FROM linuxserver/qbittorrent:latest
 
-COPY scripts /
+COPY scripts /scripts
 
 ENV HOME=/root
 
@@ -9,4 +9,4 @@ RUN apk add --no-cache pipx openvpn iptables expect \
 
 ENV HOME=/config
 
-ENTRYPOINT ["sh", "/qbit-startup.sh"]
+ENTRYPOINT ["sh", "/scripts/qbit-startup.sh"]
