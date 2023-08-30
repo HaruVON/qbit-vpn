@@ -6,7 +6,8 @@ ENV HOME=/root
 
 RUN apk add --no-cache pipx openvpn iptables expect \
     && pipx install protonvpn-cli \
-    && chmod +x /scripts/*
+    && chmod +x /scripts/qbit-startup.sh \
+    && chmod +x /scripts/qbit-startup.sh
 
 ENV HOME=/config
 
