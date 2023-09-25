@@ -3,7 +3,9 @@ name: cicd-docker-hub-push
 on:
   push:
     branches:
-      - "main"
+      - "main"    
+  schedule:
+    - cron: '0 0 * * 0'
 
 jobs:
   docker:
