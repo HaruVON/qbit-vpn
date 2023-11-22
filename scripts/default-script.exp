@@ -62,8 +62,8 @@ Please choose your ProtonVPN Plan\r
 4) Visionary\r
 \r
 Your plan: "
-send -- "3\r"
-expect -exact "3\r
+send -- "$env(PVPN_TIER)\r"
+expect -exact "$env(PVPN_TIER)\r
 \r
 Choose the default OpenVPN protocol.\r
 OpenVPN can act on two different protocols: UDP and TCP.\r
