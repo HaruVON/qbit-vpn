@@ -53,6 +53,6 @@ Below are the environmental variables for the linuxserver/qbittorrent image and 
    **Note** - this is different from your account password. This is specific to using the VPN.  
    Ex: hPXgr3fzE2k6KAvNX2Nd3R3iavrPuh3g (fake)
 
-3. **PVPN_TIER** - Default: 3 - defined in Dockerfile
-   Your ProtonVPN Tier. A number from 1-4
+3. **PVPN_TIER** - Default: 3 - defined in Dockerfile  
+   Your ProtonVPN Tier. A number from 1-4  
    Ex: 3
