@@ -5,6 +5,6 @@
 /scripts/default-script.exp
 #fi
 
-printf '5\n2\n' | /root/.local/bin/protonvpn configure
-/root/.local/bin/protonvpn c --p2p
+printf '5\n2\n' | /config/.local/bin/protonvpn configure
+/config/.local/bin/protonvpn c --p2p
 exec /init

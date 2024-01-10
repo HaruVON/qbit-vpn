@@ -43,7 +43,7 @@ if {$force_conservative} {
 
 
 set timeout -1
-spawn /root/.local/bin/protonvpn init
+spawn /config/.local/bin/protonvpn init
 match_max 100000
 expect -re ".*Enter your ProtonVPN OpenVPN username: "
 send -- "$env(PVPN_UNAME)\r"
