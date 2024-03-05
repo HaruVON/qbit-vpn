@@ -56,3 +56,10 @@ Below are the environmental variables for the linuxserver/qbittorrent image and 
 3. **PVPN_TIER** - Default: 3 - defined in Dockerfile  
    Your ProtonVPN Tier. A number from 1-4  
    Ex: 3
+
+## Issues
+---
+- Sometimes running this container fails to install protonvpn-cli and setup pipx environment. At the moment there is not an explanation to this.
+   - Workaround: exec into the container, make sure pipx is installed, then install protonvpn-cli. This will install the environment and protonvpn-cli in the config mountpoint/volume which has worked for me without having to manage anything for months.
+- Fails to connect to protonvpn upon update/restart.
+   - Workaround: stop the container and delete the image. Do a full repull of the image.
