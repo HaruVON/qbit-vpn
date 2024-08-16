@@ -1,3 +1,8 @@
+# NOTICE
+
+This project isn't currently worked on in favor of running a Gluetun container which connects to ProtonVPN then running a qbittorrent container that attaches to the Gluetun docker network.
+May revist when protonvpn releases better CLI functionality.
+
 # qbit-vpn
 
 This project builds ontop of the linuxserver/qbittorrent docker image and adds a connection to the protonvpn service with the kill switch enabled to hide your ip address while torrenting.
